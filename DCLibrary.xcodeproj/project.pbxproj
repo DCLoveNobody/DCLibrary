@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A2462D220E3938B000FD647 /* JPSVolumeButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2462D020E3938B000FD647 /* JPSVolumeButtonHandler.m */; };
 		7ADC104A20E1184100D5F80F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC104920E1184100D5F80F /* AppDelegate.m */; };
 		7ADC104D20E1184100D5F80F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC104C20E1184100D5F80F /* ViewController.m */; };
 		7ADC105020E1184100D5F80F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ADC104E20E1184100D5F80F /* Main.storyboard */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A2462D020E3938B000FD647 /* JPSVolumeButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPSVolumeButtonHandler.m; sourceTree = "<group>"; };
+		7A2462D120E3938B000FD647 /* JPSVolumeButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPSVolumeButtonHandler.h; sourceTree = "<group>"; };
 		7ADC104520E1184100D5F80F /* DCLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ADC104820E1184100D5F80F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7ADC104920E1184100D5F80F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -147,6 +150,8 @@
 		7ADC108420E118ED00D5F80F /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				7A2462D120E3938B000FD647 /* JPSVolumeButtonHandler.h */,
+				7A2462D020E3938B000FD647 /* JPSVolumeButtonHandler.m */,
 				7ADC109220E11FAB00D5F80F /* DCViewController.h */,
 				7ADC109320E11FAB00D5F80F /* DCViewController.m */,
 				7ADC109820E1269400D5F80F /* UIView+Extension.h */,
@@ -285,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A2462D220E3938B000FD647 /* JPSVolumeButtonHandler.m in Sources */,
 				7ADC104D20E1184100D5F80F /* ViewController.m in Sources */,
 				7ADC109420E11FAB00D5F80F /* DCViewController.m in Sources */,
 				7ADC105820E1184300D5F80F /* main.m in Sources */,
@@ -460,7 +466,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89J6487948;
 				INFOPLIST_FILE = DCLibrary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,7 +484,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 89J6487948;
 				INFOPLIST_FILE = DCLibrary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

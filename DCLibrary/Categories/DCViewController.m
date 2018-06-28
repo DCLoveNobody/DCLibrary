@@ -8,6 +8,7 @@
 
 #import "DCViewController.h"
 #import <objc/runtime.h>
+#import <MediaPlayer/MediaPlayer.h>
 @interface DCViewController ()
 
 @end
@@ -17,11 +18,43 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    UIView *view = [[UIView alloc] init];
-    UIView *view1 = [[UIView alloc] init];
-    UIView *view2 = [[UIView alloc] init];
-    UIView *view3 = [[UIView alloc] init];
-    NSLog(@"%ld", self.view.safeAreaInsets.top);
+    MPVolumeView *volumeView = [[MPVolumeView alloc] initWithFrame:CGRectZero];
+    [self.view addSubview:volumeView];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(applicationDidChangeActive:)
+                                                 name:UIApplicationWillResignActiveNotification
+                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(applicationDidChangeActive:)
+                                                 name:UIApplicationDidBecomeActiveNotification
+                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(volumeChanged:)
+                                                 name:@"AVSystemController_SystemVolumeDidChangeNotification"
+                                               object:nil];
+}
+
+- (void)applicationDidChangeActive:(NSNotification *)notification {
+    if ([notification.name isEqualToString:UIApplicationDidBecomeActiveNotification]) {
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(volumeChanged:)
+                                                     name:@"AVSystemController_SystemVolumeDidChangeNotification"
+                                                   object:nil];
+    } else {
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:@"AVSystemController_SystemVolumeDidChangeNotification" object:nil];
+    }
+}
+
+- (void)volumeChanged:(NSNotification *)notification
+{
+    NSLog(@"%@", notification);
+    float volume =
+    [[[notification userInfo]
+      objectForKey:@"AVSystemController_AudioVolumeNotificationParameter"]
+     floatValue];
+    NSLog(@"%f", volume);
+    
 }
 
 - (void)didReceiveMemoryWarning {

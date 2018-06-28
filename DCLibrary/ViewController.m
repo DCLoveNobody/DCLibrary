@@ -10,43 +10,83 @@
 #import "Person.h"
 #import "DCViewController.h"
 #import <objc/runtime.h>
+#import <MediaPlayer/MediaPlayer.h>
+#import <AVFoundation/AVFoundation.h>
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
-
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    Person *p = [[Person alloc] init];
-    Person *p1 = [[Person alloc] init];
-    Person *p2 = [[Person alloc] init];
-    Person *p3 = [[Person alloc] init];
+    
+
+    
     
     [self.navigationController pushViewController:[[DCViewController alloc] init] animated:true];
     
+    
+}
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+void volumeListenerCallback (
+                             void                     *inClientData,
+                             AudioSessionPropertyID   inID,
+                             UInt32                   inDataSize,
+                             const void               *inData
+                             ){
+    const float*volumePointer = inData;
+    float volume= *volumePointer;
+    NSLog(@"volumeListenerCallback %f", volume);
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    
+}
+
+- (void)volumeChanged:(NSNotification *)notification
+{
+    NSLog(@"%@", notification);
+    float volume =
+    [[[notification userInfo]
+      objectForKey:@"AVSystemController_AudioVolumeNotificationParameter"]
+     floatValue];
+    NSLog(@"%f", volume);
     
 }
 - (IBAction)touch:(id)sender {
     [self animation];
 }
 
-- (void)animation {
-    [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:1 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-        CGRect frame = self.imageView.frame;
-        self.imageView.frame = CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, frame.size.height - 20);
-    } completion:^(BOOL finished) {
-        [UIView animateWithDuration:2 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:1 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-            CGRect frame = self.imageView.frame;
-            self.imageView.frame = CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, frame.size.height + 40);
-        } completion:^(BOOL finished) {
-            
-        }];
-    }];
+- (void)applicationDidChangeActive:(NSNotification *)notification {
+    if ([notification.name isEqualToString:UIApplicationDidBecomeActiveNotification]) {
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(volumeChanged:)
+                                                     name:@"AVSystemController_SystemVolumeDidChangeNotification"
+                                                   object:nil];
+    } else {
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:@"AVSystemController_SystemVolumeDidChangeNotification" object:nil];
+    }
 }
 
+- (void)animation {
+}
+
+- (IBAction)two:(id)sender {
+    [UIView animateWithDuration:2 delay:0 usingSpringWithDamping:0.1 initialSpringVelocity:1 options:UIViewAnimationOptionCurveEaseIn animations:^{
+        CGRect frame = self.imageView.frame;
+        self.imageView.frame = CGRectMake(frame.origin.x, frame.origin.y - 10, frame.size.width, frame.size.height);
+    } completion:^(BOOL finished) {
+
+    }];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
