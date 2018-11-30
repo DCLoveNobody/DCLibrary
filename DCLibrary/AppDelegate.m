@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+static NSUncaughtExceptionHandler *previousExceptionHander;
 @interface AppDelegate ()
 
 @end
@@ -17,9 +17,24 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+    NSSetUncaughtExceptionHandler(&my_uncaught_exception_handler);
+    previousExceptionHander = NSGetUncaughtExceptionHandler();
+    NSSetUncaughtExceptionHandler(&replace_uncaught_exception_handler);
     return YES;
 }
+
+static void my_uncaught_exception_handler (NSException *exception) {
+    NSLog(@"%@", exception);
+}
+
+static void replace_uncaught_exception_handler (NSException *exception) {
+    
+    if (previousExceptionHander != NULL) {
+        previousExceptionHander(exception);
+    }
+    NSLog(@"%@", exception);
+}
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
