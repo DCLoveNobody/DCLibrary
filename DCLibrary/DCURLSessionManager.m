@@ -29,7 +29,20 @@ typedef void (^DCURLSessionTaskCompletionHandler)(NSURLResponse *response, id re
     }
     _mutableData = [NSMutableData data];
     _downloadProgress = [[NSProgress alloc] initWithParent:nil userInfo:nil];
+    _uploadProgress = [[NSProgress alloc] initWithParent:nil userInfo:nil];
     return self;
+}
+#pragma mark - NSURLSessionTaskDelegate
+- (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task
+didCompleteWithError:(nullable NSError *)error {
+    if (self.completionHandler) {
+        NSData *data = nil;
+        if (self.mutableData) {
+            data = [self.mutableData copy];
+            self.mutableData = nil;
+        }
+        self.completionHandler(task.response, data, error);
+    }
 }
 - (void)URLSession:(NSURLSession *)session
           dataTask:(NSURLSessionDataTask *)dataTask
@@ -45,6 +58,10 @@ didBecomeDownloadTask:(NSURLSessionDownloadTask *)downloadTask
     [self.mutableData appendData:data];
     self.downloadProgress.totalUnitCount = dataTask.countOfBytesExpectedToReceive;
     self.downloadProgress.completedUnitCount = dataTask.countOfBytesReceived;
+    typedef weak  <#name#>
+    if (self.downloadProgressBlock) {
+        self.downloadProgressBlock(<#NSProgress *#>)
+    }
 }
 
 - (void)URLSession:(NSURLSession *)session
@@ -80,11 +97,11 @@ didBecomeDownloadTask:(NSURLSessionDownloadTask *)downloadTask
     if (!configuration) {
         configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     }
-    self.sessionConfigutation = configuration;
-    self.operationQueue = [[NSOperationQueue alloc] init];
-    self.operationQueue.maxConcurrentOperationCount = 1;
-    self.session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:self.operationQueue];
-    
+    _sessionConfigutation = configuration;
+    _operationQueue = [[NSOperationQueue alloc] init];
+    _operationQueue.maxConcurrentOperationCount = 1;
+    _session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:_operationQueue];
+    _mutableTaskDelegatesKeyedByTaskIdentifier = [NSMutableDictionary dictionary];
     return self;
 }
 
@@ -100,6 +117,19 @@ didBecomeDownloadTask:(NSURLSessionDownloadTask *)downloadTask
     self.mutableTaskDelegatesKeyedByTaskIdentifier[@(task.taskIdentifier)] = delegate;
 }
 
+- (DCURLSessionManagerTaskDelegate *)delegateForTask:(NSURLSessionTask *)task {
+    DCURLSessionManagerTaskDelegate *delegate = self.mutableTaskDelegatesKeyedByTaskIdentifier[@(task.taskIdentifier)];
+    return delegate;
+}
+
+- (void)removeDelegateForTask:(NSURLSessionTask *)task {
+    [self.mutableTaskDelegatesKeyedByTaskIdentifier removeObjectForKey:@(task.taskIdentifier)];
+}
+
+- (NSURLSessionDataTask *)dataTaskWithRequest:(NSURLRequest *)request completionHandler:(void (^)(NSURLResponse *, NSData *, NSError *))completionHandler {
+    return [self dataTaskWithRequest:request uploadProgress:nil downloadProgress:nil completionHandler:completionHandler];
+}
+
 - (NSURLSessionDataTask *)dataTaskWithRequest:(NSURLRequest *)request
                                uploadProgress:(nullable void (^)(NSProgress *uploadProgress)) uploadProgressBlock
                              downloadProgress:(nullable void (^)(NSProgress *downloadProgress)) downloadProgressBlock
@@ -109,11 +139,6 @@ didBecomeDownloadTask:(NSURLSessionDownloadTask *)downloadTask
     // dataTask关联相应的delegate
     [self addDelegateForDataTask:dataTask uploadProgress:uploadProgressBlock downloadProgress:downloadProgressBlock completionHandler:completionHandler];
     
-    return dataTask;
-}
-
-- (NSURLSessionDataTask *)dataTaskWithRequest:(NSURLRequest *)request completionHandler:(void (^)(NSData *data, NSURLResponse *response, NSError *error))completionHandler {
-    NSURLSessionDataTask *dataTask = [self.session dataTaskWithRequest:request];
     return dataTask;
 }
 
@@ -140,7 +165,10 @@ willPerformHTTPRedirection:(NSHTTPURLResponse *)response
         newRequest:(NSURLRequest *)request
  completionHandler:(void (^)(NSURLRequest *))completionHandler
 {
-    
+    NSURLRequest *redirectRequest = request;
+    if (completionHandler) {
+        completionHandler(redirectRequest);
+    }
 }
 
 - (void)URLSession:(NSURLSession *)session
@@ -148,7 +176,11 @@ willPerformHTTPRedirection:(NSHTTPURLResponse *)response
 didReceiveChallenge:(NSURLAuthenticationChallenge *)challenge
  completionHandler:(void (^)(NSURLSessionAuthChallengeDisposition disposition, NSURLCredential *credential))completionHandler
 {
-    
+    NSURLSessionAuthChallengeDisposition disposition = NSURLSessionAuthChallengePerformDefaultHandling;
+    NSURLCredential *credential = [NSURLCredential credentialForTrust:challenge.protectionSpace.serverTrust];
+    if (completionHandler) {
+        completionHandler(disposition, credential);
+    }
 }
 
 - (void)URLSession:(NSURLSession *)session
@@ -172,17 +204,13 @@ totalBytesExpectedToSend:(int64_t)totalBytesExpectedToSend
               task:(NSURLSessionTask *)task
 didCompleteWithError:(NSError *)error
 {
-
-}
-
-#if AF_CAN_INCLUDE_SESSION_TASK_METRICS
-- (void)URLSession:(NSURLSession *)session
-              task:(NSURLSessionTask *)task
-didFinishCollectingMetrics:(NSURLSessionTaskMetrics *)metrics
-{
+    DCURLSessionManagerTaskDelegate *delegate = [self delegateForTask:task];
     
+    if (delegate) {
+        [delegate URLSession:session task:task didCompleteWithError:error];
+        [self removeDelegateForTask:task];
+    }
 }
-#endif
 
 #pragma mark - NSURLSessionDataDelegate
 
@@ -217,7 +245,10 @@ didBecomeDownloadTask:(NSURLSessionDownloadTask *)downloadTask
  willCacheResponse:(NSCachedURLResponse *)proposedResponse
  completionHandler:(void (^)(NSCachedURLResponse *cachedResponse))completionHandler
 {
-    NSLog(@"");
+    NSCachedURLResponse *cachedResponse = proposedResponse;
+    if (completionHandler) {
+        completionHandler(cachedResponse);
+    }
 }
 
 
