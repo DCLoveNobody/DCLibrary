@@ -9,6 +9,7 @@
 #import "DCURLSessionManager.h"
 typedef void (^DCURLSessionTaskProgressBlock)(NSProgress *);
 typedef void (^DCURLSessionTaskCompletionHandler)(NSURLResponse *response, id responseObject, NSError *error);
+typedef NSURL * (^DCURLSessionTaskDownloadCompleteBlock)(NSURLSession *, NSURLSessionDownloadTask *, NSURL *);
 
 @interface DCURLSessionManagerTaskDelegate : NSObject<NSURLSessionDelegate, NSURLSessionTaskDelegate, NSURLSessionDataDelegate, NSURLSessionDownloadDelegate>
 @property (nonatomic, weak) DCURLSessionManager *manager;
@@ -18,6 +19,8 @@ typedef void (^DCURLSessionTaskCompletionHandler)(NSURLResponse *response, id re
 @property (nonatomic, copy) DCURLSessionTaskProgressBlock uploadProgressBlock;
 @property (nonatomic, copy) DCURLSessionTaskProgressBlock downloadProgressBlock;
 @property (nonatomic, copy) DCURLSessionTaskCompletionHandler completionHandler;
+@property (nonatomic, copy) DCURLSessionTaskDownloadCompleteBlock downloadCompleteBlock;
+@property (nonatomic, copy) NSURL *destinationURL;
 @end
 
 @implementation DCURLSessionManagerTaskDelegate
@@ -58,9 +61,9 @@ didBecomeDownloadTask:(NSURLSessionDownloadTask *)downloadTask
     [self.mutableData appendData:data];
     self.downloadProgress.totalUnitCount = dataTask.countOfBytesExpectedToReceive;
     self.downloadProgress.completedUnitCount = dataTask.countOfBytesReceived;
-    typedef weak  <#name#>
+
     if (self.downloadProgressBlock) {
-        self.downloadProgressBlock(<#NSProgress *#>)
+        self.downloadProgressBlock(self.downloadProgress);
     }
 }
 
@@ -72,6 +75,49 @@ didBecomeDownloadTask:(NSURLSessionDownloadTask *)downloadTask
     NSLog(@"");
 }
 
+#pragma mark - NSURLSessionDownloadDelegate
+
+- (void)URLSession:(NSURLSession *)session
+      downloadTask:(NSURLSessionDownloadTask *)downloadTask
+didFinishDownloadingToURL:(NSURL *)location
+{
+    if (self.downloadCompleteBlock) {
+        self.destinationURL = self.downloadCompleteBlock(session, downloadTask, location);
+    }
+    if (self.destinationURL) {
+        NSFileManager *fileManager = [NSFileManager defaultManager];
+        NSError *error = nil;
+        [fileManager moveItemAtURL:location toURL:self.destinationURL error:&error];
+    }
+}
+
+- (void)URLSession:(NSURLSession *)session
+      downloadTask:(NSURLSessionDownloadTask *)downloadTask
+      didWriteData:(int64_t)bytesWritten
+ totalBytesWritten:(int64_t)totalBytesWritten
+totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite
+{
+    self.downloadProgress.totalUnitCount = totalBytesExpectedToWrite;
+    self.downloadProgress.completedUnitCount = totalBytesWritten;
+    
+    if (self.downloadProgressBlock) {
+        self.downloadProgressBlock(self.downloadProgress);
+    }
+}
+
+- (void)URLSession:(NSURLSession *)session
+      downloadTask:(NSURLSessionDownloadTask *)downloadTask
+ didResumeAtOffset:(int64_t)fileOffset
+expectedTotalBytes:(int64_t)expectedTotalBytes
+{
+    self.downloadProgress.totalUnitCount = expectedTotalBytes;
+    self.downloadProgress.completedUnitCount = fileOffset;
+    
+    if (self.downloadProgressBlock) {
+        self.downloadProgressBlock(self.downloadProgress);
+    }
+}
+
 @end
 
 @interface DCURLSessionManager() <NSURLSessionDelegate, NSURLSessionTaskDelegate, NSURLSessionDataDelegate, NSURLSessionDownloadDelegate>
@@ -80,7 +126,6 @@ didBecomeDownloadTask:(NSURLSessionDownloadTask *)downloadTask
 @property (nonatomic, strong) NSURLSessionConfiguration *sessionConfigutation;
 @property (nonatomic, readwrite, strong) NSMutableDictionary *mutableTaskDelegatesKeyedByTaskIdentifier;
 @end
-
 @implementation DCURLSessionManager
 
 - (instancetype)init
@@ -117,6 +162,17 @@ didBecomeDownloadTask:(NSURLSessionDownloadTask *)downloadTask
     self.mutableTaskDelegatesKeyedByTaskIdentifier[@(task.taskIdentifier)] = delegate;
 }
 
+- (void)addDelegateForDownloadTask:(NSURLSessionTask *)task
+              downloadProgress:(nullable void (^)(NSProgress *uploadProgress))downloadProgressBlock
+                   destination:(NSURL * (^)(NSURLSession *, NSURLSessionDownloadTask *, NSURL *))destination
+             completionHandler:(nullable void (^)(NSURLResponse *response, id _Nullable responseObject,  NSError * _Nullable error))completionHandler {
+    DCURLSessionManagerTaskDelegate *delegate = [[DCURLSessionManagerTaskDelegate alloc] initWithTask:task];
+    delegate.downloadProgressBlock = downloadProgressBlock;
+    delegate.completionHandler = completionHandler;
+    delegate.downloadCompleteBlock = destination;
+    self.mutableTaskDelegatesKeyedByTaskIdentifier[@(task.taskIdentifier)] = delegate;
+}
+
 - (DCURLSessionManagerTaskDelegate *)delegateForTask:(NSURLSessionTask *)task {
     DCURLSessionManagerTaskDelegate *delegate = self.mutableTaskDelegatesKeyedByTaskIdentifier[@(task.taskIdentifier)];
     return delegate;
@@ -140,6 +196,15 @@ didBecomeDownloadTask:(NSURLSessionDownloadTask *)downloadTask
     [self addDelegateForDataTask:dataTask uploadProgress:uploadProgressBlock downloadProgress:downloadProgressBlock completionHandler:completionHandler];
     
     return dataTask;
+}
+
+- (NSURLSessionDownloadTask *)downloadTaskWithRequest:(NSURLRequest *)request
+                                     downloadProgress:(void (^)(NSProgress *downloadProgress)) downloadProgressBlock
+                                          destination:(NSURL * (^)(NSURLSession *, NSURLSessionDownloadTask *, NSURL *))destination
+                                    completionHandler:(nullable void (^)(NSURLResponse *response, id _Nullable responseObject,  NSError * _Nullable error))completionHandler {
+    NSURLSessionDownloadTask *downloadTask = [self.session downloadTaskWithRequest:request];
+    [self addDelegateForDownloadTask:downloadTask downloadProgress:downloadProgressBlock destination:destination completionHandler:completionHandler];
+    return downloadTask;
 }
 
 #pragma mark - NSURLSessionDelegate
@@ -258,7 +323,10 @@ didBecomeDownloadTask:(NSURLSessionDownloadTask *)downloadTask
       downloadTask:(NSURLSessionDownloadTask *)downloadTask
 didFinishDownloadingToURL:(NSURL *)location
 {
-    
+    DCURLSessionManagerTaskDelegate *delegate = self.mutableTaskDelegatesKeyedByTaskIdentifier[@(downloadTask.taskIdentifier)];
+    if (delegate) {
+        [delegate URLSession:session downloadTask:downloadTask didFinishDownloadingToURL:location];
+    }
 }
 
 - (void)URLSession:(NSURLSession *)session
@@ -267,8 +335,10 @@ didFinishDownloadingToURL:(NSURL *)location
  totalBytesWritten:(int64_t)totalBytesWritten
 totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite
 {
-    
-    
+    DCURLSessionManagerTaskDelegate *delegate = self.mutableTaskDelegatesKeyedByTaskIdentifier[@(downloadTask.taskIdentifier)];
+    if (delegate) {
+        [delegate URLSession:session downloadTask:downloadTask didWriteData:bytesWritten totalBytesWritten:totalBytesWritten totalBytesExpectedToWrite:totalBytesExpectedToWrite];
+    }
 }
 
 - (void)URLSession:(NSURLSession *)session
@@ -276,6 +346,9 @@ totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite
  didResumeAtOffset:(int64_t)fileOffset
 expectedTotalBytes:(int64_t)expectedTotalBytes
 {
-    
+    DCURLSessionManagerTaskDelegate *delegate = self.mutableTaskDelegatesKeyedByTaskIdentifier[@(downloadTask.taskIdentifier)];
+    if (delegate) {
+        [delegate URLSession:session downloadTask:downloadTask didResumeAtOffset:fileOffset expectedTotalBytes:expectedTotalBytes];
+    }
 }
 @end
