@@ -1,0 +1,33 @@
+{
+    "name" : "第一周：计算机操作系统概述（上）",
+    "videos" : [
+      {
+        "name" : "第一章：计算机系统概览",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/01\/1004247136_7fdb153e9d3148c7a11afe8fddb835ed_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f67b58efcdc4a3462b6b5bc9ad68d786d927884a61d4b1136413251610a6a8713fdc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "第二章：计算机硬件系统",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/01\/1004250124_ba43e4fd98174388aa201a7851c57df3_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6c2867fa84c6d940156125c510710dd9c2dba482a2678c0533227a45bb15c56bddc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "第三章：计算机软件系统",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/05\/1004249248_2a41f2fc1a3c4b6794ff19c0060cf424_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f66bef534fd06af3123d1182d184af7cd6df29ee3ba37a607a272592196dcd5679dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "第四章：计算机操作技术的发展",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/05\/1004249252_9dcc277d77d140f682bb981dd2b16e29_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f66bef534fd06af3123d1182d184af7cd6b7591fdc9d04aa6bdabd6ecbb6a6cc08dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "第五章：计算机操作系统",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/05\/1004247248_ccb25e0cc5604c498114994a0957e136_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f67b58efcdc4a3462b6b5bc9ad68d786d95663440128fcf2165ff7e99c6497f740dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "第六章：资源管理的角度",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/01\/1004247137_a9a08f9cfc8d4a28867539ca9ab4ec0d_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f67b58efcdc4a3462b6b5bc9ad68d786d9c760d57cb8560810f1193abbaa68f51edc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "第七章：程序控制的角度",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/01\/1004247140_c6cd984df1574dfd923fb9e5d994bfc2_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f67b58efcdc4a3462b6b5bc9ad68d786d914d573e0867908e3ae844ca3ca2f723edc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      }
+    ]
+  }

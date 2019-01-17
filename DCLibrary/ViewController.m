@@ -25,13 +25,45 @@
 @property (nonatomic, strong) DCURLSessionManager *sessionManager;
 @property (nonatomic, strong) dispatch_queue_t syncQueue;
 @property (nonatomic, strong) dispatch_queue_t asyncQueue;
+@property (nonatomic, strong) NSMutableArray *downloadLessons;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self test];    
+    [self moocDownLoad];
+}
+
+- (void)moocDownLoad {
+    self.downloadLessons = [NSMutableArray array];
+    NSString *resourceURL = @"/Users/haoke/Desktop/Mooc";
+    NSData *resourceData = [NSData dataWithContentsOfFile:resourceURL];
+    if (resourceData) {
+        NSDictionary *moocDictionary = [NSJSONSerialization JSONObjectWithData:resourceData options:NSJSONReadingMutableContainers error:nil];
+        [self.downloadLessons addObjectsFromArray:moocDictionary[@"videos"]];
+    }
+    [self download];
+}
+
+- (void)download {
+    if (self.downloadLessons.count <= 0) return;
+    NSDictionary *video = self.downloadLessons.firstObject;
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:video[@"downloadUrl"]]];
+    NSURL *documentPath = [NSURL fileURLWithPath:[NSString stringWithFormat:@"/Users/haoke/Desktop/Videos/%@.mp4", video[@"name"]]];
+    __weak typeof(self) weakSelf = self;
+    NSURLSessionDownloadTask *downloadTask = [self.sessionManager downloadTaskWithRequest:request downloadProgress:^(NSProgress *downloadProgress) {
+        CGFloat progress = downloadProgress.completedUnitCount * 1.0 / downloadProgress.totalUnitCount;
+        NSLog(@"progress = %lf", progress);
+    } destination:^(NSURLSession *session, NSURLSessionDownloadTask *task, NSURL *URL) {
+        return documentPath;
+    } completionHandler:^(NSURLResponse *response, id  _Nullable responseObject, NSError * _Nullable error) {
+        if (weakSelf.downloadLessons.count > 0) {
+            [weakSelf.downloadLessons removeObjectAtIndex:0];
+            [weakSelf download];
+        }
+    }];
+    [downloadTask resume];
 }
 - (IBAction)click:(id)sender {
 }

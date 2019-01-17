@@ -1,0 +1,402 @@
+[
+  {
+    "name" : "第一周：计算机操作系统概述（上）",
+    "videos" : [
+      {
+        "name" : "第一章：计算机系统概览",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/01\/1004247136_7fdb153e9d3148c7a11afe8fddb835ed_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f67b58efcdc4a3462b6b5bc9ad68d786d927884a61d4b1136413251610a6a8713fdc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "第二章：计算机硬件系统",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/01\/1004250124_ba43e4fd98174388aa201a7851c57df3_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6c2867fa84c6d940156125c510710dd9c2dba482a2678c0533227a45bb15c56bddc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "第三章：计算机软件系统",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/05\/1004249248_2a41f2fc1a3c4b6794ff19c0060cf424_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f66bef534fd06af3123d1182d184af7cd6df29ee3ba37a607a272592196dcd5679dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "第四章：计算机操作技术的发展",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/05\/1004249252_9dcc277d77d140f682bb981dd2b16e29_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f66bef534fd06af3123d1182d184af7cd6b7591fdc9d04aa6bdabd6ecbb6a6cc08dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "第五章：计算机操作系统",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/05\/1004247248_ccb25e0cc5604c498114994a0957e136_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f67b58efcdc4a3462b6b5bc9ad68d786d95663440128fcf2165ff7e99c6497f740dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "第六章：资源管理的角度",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/01\/1004247137_a9a08f9cfc8d4a28867539ca9ab4ec0d_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f67b58efcdc4a3462b6b5bc9ad68d786d9c760d57cb8560810f1193abbaa68f51edc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "第七章：程序控制的角度",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/01\/1004247140_c6cd984df1574dfd923fb9e5d994bfc2_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f67b58efcdc4a3462b6b5bc9ad68d786d914d573e0867908e3ae844ca3ca2f723edc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      }
+    ]
+  },
+  {
+    "name" : "第二周：计算机操作系统概述（下）和处理器管理（上）",
+    "videos" : [
+      {
+        "name" : "1-8 操作系统控制计算机的角度",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/01\/1004249142_87cd0c65b7d841598dcedbd32064eaff_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f66bef534fd06af3123d1182d184af7cd637256039015a78a402bf448abac6403fdc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "1-9 人机交互的角度",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/02\/1004249151_e65a8189a1764e89ac8f0189d769f830_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f66bef534fd06af3123d1182d184af7cd660edacc0267414b055cfd9ebb7a5b848dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "1-10 程序接口的角度",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/05\/1004249247_1f1f6ee844fe4369b4953809054ffae1_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f66bef534fd06af3123d1182d184af7cd6cc38b7b538184e0c66777dbba3fa69b1dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "1.11 系统结构的角度",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/05\/1004247249_906fc517a82a4b57895bedf4cc9b74cf_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f67b58efcdc4a3462b6b5bc9ad68d786d96dec63b3284d0d9b6bda55d8231c51c2dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "2.1 处理器与寄存器",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/05\/1004250242_6e54ad1c003b4d3fb4d1c4b944be5e48_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6a872d0c98093c2e5a445cb2e8ecd731945d0005e01753f37fec33a0770f9caa3dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "2-2 指令与处理器模式",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/05\/1004249254_36ce93e8e9da4d73a41956ecf63f615e_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6a872d0c98093c2e5a445cb2e8ecd7319f9ed4c629758cf90fee81c0a3aea61cedc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "2-3 中断",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/05\/1004247246_1b013cb4fe0e416c9e326b946e155783_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f67b58efcdc4a3462b6b5bc9ad68d786d95c2593e1c1836013f885052f77104feddc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "2-4 中断源",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/12\/20\/1005562160_e128b668e05a49129023053fbb7cc13d_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f665c7e2e87e73e745350db9fb2df6a9eac411ec3ff1d2c81f9a5f5f245b50b260dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      }
+    ]
+  },
+  {
+    "name" : "第三周：处理器管理（中）",
+    "videos" : [
+      {
+        "name" : "2.5\t中断系统1",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/05\/1004250240_77e51534839343f89be75e534d24e880_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6c2867fa84c6d940156125c510710dd9c1a6d1cfefd1f9625a8e973fa6709f190dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "2-6\t中断系统2",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/05\/1004247245_b95616f6fdd84a6a8210729a72f4775c_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f67b58efcdc4a3462b6b5bc9ad68d786d94373497e13e9a0a81b0ebc6e4e243d14dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "2-7\t多中断的响应与处理",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/05\/1004248240_30c8db0cb3174e559e4beee9b3742d55_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f66bef534fd06af3123d1182d184af7cd6329fbb996513b7191a5b5aef53e02ae0dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "2-8\t进程及其状态",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/05\/1004249250_e5f9e05bd46145518c9e6b33fe350af3_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f66bef534fd06af3123d1182d184af7cd6488dab9b5282a540ad353edfd8b992a9dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "2-9\t进程的数据描述",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/05\/1004249249_d0e0ff2aac834e35b77ebde0ccf5c4f3_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6a872d0c98093c2e5a445cb2e8ecd7319da46cc5ee200cd77cc3259302e693370dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "2-10 进程的管理",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/05\/1004249251_fb4c7e534d0c4dea9c7a5e37c1eb26f4_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f66bef534fd06af3123d1182d184af7cd6d7d24a57208f2aec3db902a48c2fb8a2dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "2-11 进程切换与模式切换",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/05\/1004248242_0c2573048e8d4cf78c2680ab395e3972_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f67b58efcdc4a3462b6b5bc9ad68d786d98717b32409d52af9002f008271d9d158dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      }
+    ]
+  },
+  {
+    "name" : "第四周：处理器管理（下）",
+    "videos" : [
+      {
+        "name" : "2-12 多线程技术概述",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/05\/1004250241_7a578c5f39b845bd91b101ac59cdc7ba_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6c2867fa84c6d940156125c510710dd9c0d7994d2ae03df8f87ec3d4dcede8fdadc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "2-13 KLT与ULT",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/05\/1004247247_ba7e85fed4f4466c987960bfa1c33867_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f67b58efcdc4a3462b6b5bc9ad68d786d945874178b5453a55903adf053288107edc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "2-14 多线程实现的混合策略",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/05\/1004248245_d0ed7d8fb2694d779d7150699bf82355_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f66bef534fd06af3123d1182d184af7cd6e2f91df7f39d346b881e738703f9e084dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "2-15 处理器调度的层次",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/05\/1004248241_9a6c350facfb4b31b8c0c37dcd232f25_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f66bef534fd06af3123d1182d184af7cd6f34425f9e357cd0b0cd1e63ae1b034e2dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "2-16 处理器调度算法1",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/05\/1004249253_d22f0143e796497894e9092c8def0a8c_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6a872d0c98093c2e5a445cb2e8ecd7319bcd6e2b96518c16edf2761f260e001fcdc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "2-17 处理器调度算法2",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/05\/1004248243_ee721bf7e4e846dd9183c736b76ed844_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f66bef534fd06af3123d1182d184af7cd61faa00c8517807ff4f976ab09f70de1edc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      }
+    ]
+  },
+  {
+    "name" : "第五周：存储管理（上）",
+    "videos" : [
+      {
+        "name" : "3-1\t存储管理的主要模式",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004250275_2e6a04cbe5a94bb7816de92981f7cb1b_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6c2867fa84c6d940156125c510710dd9c1baa153d9f432bed362df6af8d7d6ea3dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "3-2\t存储管理的功能",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004249298_b58a8c44ceeb4298965b534b4ece1d26_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6a872d0c98093c2e5a445cb2e8ecd7319e816c629414bb0dba8bb424525bc4459dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "3-3\t虚拟存储器的概念",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004247280_5d7b2acddad744a196d145b31b4fbee9_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f67b58efcdc4a3462b6b5bc9ad68d786d90173446cae6ff83590a33e1447523837dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "3-4\t存储管理的硬件支撑",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004249299_2b309a58ca7949c285a74cffc691bb6e_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6a872d0c98093c2e5a445cb2e8ecd73193a4dd23f89e74bbe8fde60c95398086cdc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "3-5\t单连续分区存储管理",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004250282_59954be23879498983db997a47dd593e_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6c2867fa84c6d940156125c510710dd9c8c25730fd876d5c3760f557ab74b48dedc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "3-6\t可变分区存储管理",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004248278_9c0ef56bab8845e0b659792b0e161d69_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f66bef534fd06af3123d1182d184af7cd63fc3978d7f0143932de8d891ede89738dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      }
+    ]
+  },
+  {
+    "name" : "第六周：存储管理（下）",
+    "videos" : [
+      {
+        "name" : "3-7\t页式存储管理的基本原理",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004249300_209f855be6b04b6a9bc76572bca8a5a0_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6a872d0c98093c2e5a445cb2e8ecd73194ac53e397024dec57febebbb6e27a02adc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "3-8\t页式存储管理的地址转换",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004249301_3cad091cfd494aa4899b134eb9509321_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6a872d0c98093c2e5a445cb2e8ecd7319afefb27630f92545a338fe9e2fd5892bdc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "3-9\t页式虚拟存储管理",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004248277_33ab5dfaca164249afd09f577fe7f921_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f66bef534fd06af3123d1182d184af7cd6327687d76f1e79523dcd267c3ca97859dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "3-10 页面调度",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004250281_2ada567f17a24863ab601f79645d974b_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6c2867fa84c6d940156125c510710dd9cb554e7bda54646d0f8259d52dc98ce64dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "3-11 反置页表",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004250278_4f10617a23624120a17aa372818462f8_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6c2867fa84c6d940156125c510710dd9c03db79223fcc89a2e8fa22f772b7f988dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "3-12 段式存储管理",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004250276_963a9b2140a545b2b5fc0103e82afdf4_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6c2867fa84c6d940156125c510710dd9c38b1ca12ebb4e0a1dc8a2588785e9f2bdc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "3-13 段式虚拟存储管理",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004249297_466fe4d6223d4ee7bf79872ec1a7e281_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6a872d0c98093c2e5a445cb2e8ecd7319aaaed7d89b7d023bde26c909bafc8606dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "3-14 段页式存储管理",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004250277_bae775c148104dde9dc8cb5ee245ffa4_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6c2867fa84c6d940156125c510710dd9c0a3e632f20501cf2c215be815aa22ee1dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      }
+    ]
+  },
+  {
+    "name" : "第七周：设备管理（上）",
+    "videos" : [
+      {
+        "name" : "4-1\t设备管理概述",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004247282_71e01cfce4d0487db78696a556581645_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f67b58efcdc4a3462b6b5bc9ad68d786d9e60166f209f4cfde3bcea20468bd8b50dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "4-2 I\/O控制方式",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004250290_854645002e2c42399dae04236ed3dbb5_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6c2867fa84c6d940156125c510710dd9c27f71b65554f515ae34f83dad1a324e7dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "4-3 总线与I\/O",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004250286_f53176e13a224f7e96126c16521ff31d_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6c2867fa84c6d940156125c510710dd9cb14abd452ff389ff7e6740e846ab64c9dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "4-4 I\/O软件的实现层次",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004247281_86bcecce6f4443729752f096b1cedf27_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f67b58efcdc4a3462b6b5bc9ad68d786d990bb2cf1f14ac3640b2c0a699287ae09dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "4-5 I\/O软件的实现",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004249304_e94367fd3f594abb9755fecd2a56dbb9_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6a872d0c98093c2e5a445cb2e8ecd73194bab9df7b76e783cf626db796972b392dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "4-6\tI\/O缓冲区",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004250287_41d0be45a5e042c0863a505e0ad99dd6_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6c2867fa84c6d940156125c510710dd9ccca3fd895aa243396edba49b7533aaf9dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "4-7 设备独立性",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004250283_e4d7993f0d004559a557259d7411a9ee_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6c2867fa84c6d940156125c510710dd9caaa8da6cd674123ea446d3ae5ec49e84dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "4-8\t独占型外设的分配",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004250284_49a8e0b5a9b74218bf8255107b97b78a_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6c2867fa84c6d940156125c510710dd9cdbfdf584bbb40ac1d14a7502565fa805dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      }
+    ]
+  },
+  {
+    "name" : "第八周：设备管理（下）和文件管理（上）",
+    "videos" : [
+      {
+        "name" : "4-9\t磁盘的物理结构",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004247283_fec08666026c4efc9901d2546aa9cb33_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f67b58efcdc4a3462b6b5bc9ad68d786d969a8932b65b70fda957f7a068a71000ddc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "4-10 磁盘的驱动调度",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004250288_5670008857c946c499e29a25846f55c0_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6c2867fa84c6d940156125c510710dd9c12199df815995f7fb772a5ffc04d79eadc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "4-11 SPOOLing系统",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004249303_643f5301ac004cc7ab10b9e239f2f8dd_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6a872d0c98093c2e5a445cb2e8ecd731975aff7e341bf4016864ea62734207707dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "4-12 批处理系统的作业管理",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004250285_9b1df6560602497f99746a1cfaef2f1c_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f665c7e2e87e73e745350db9fb2df6a9ea7e811ae4ffd8cfbe474631007c18a0e2dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "5-1 文件的概念",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004250295_f0613ad842e340b3b605d083e97c5231_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f665c7e2e87e73e745350db9fb2df6a9ea926e5a7da2190872a5e2a4d33c44e9cadc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "5-2 文件系统及其功能",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004249308_bd2538e538084fd299a0d25ab86b04e6_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6a872d0c98093c2e5a445cb2e8ecd7319f22e9ded4dc52166e52761889eb8dc81dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "5-3 文件的存储",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004249311_43c7bad71d1249c19c4219d4c238fb34_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6a872d0c98093c2e5a445cb2e8ecd731945acc036f98382599348e8f25ebbf549dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "5-4\t文件的逻辑结构",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004249306_b708146e766148fb95d6abb3a73e2cbf_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6a872d0c98093c2e5a445cb2e8ecd73191e4313b4c731f46bb841a8d5680a512adc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "5-5 文件的物理结构",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004250294_e39505f6c0754f8bbff9a171c78828bf_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6c2867fa84c6d940156125c510710dd9c9583c33480c9fe61e56218e465f371badc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      }
+    ]
+  },
+  {
+    "name" : "第九周：设备管理（下）",
+    "videos" : [
+      {
+        "name" : "文件的物理结构",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/06\/24\/1004590068_1cb1929e2f5a4bc48508846871b2cf73_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f665c7e2e87e73e745350db9fb2df6a9ea889f9ec5f54d76879499c254b04f0ca1dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "5-7\t文件的目录结构",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004248281_39e1019a459a405bb1bdb0cc48271616_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f66bef534fd06af3123d1182d184af7cd6cf89a4701e9c8696cc4eadd09c4e98aedc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "5-8\t文件目录的管理",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004249309_c35fded61c2547cb86d66a957e2b5ffa_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6c2867fa84c6d940156125c510710dd9c0e220829c52cacb0cae0023f883f163ddc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "5-9\t文件保护和保密",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004250291_97ff16271e384846b4ef5b192461ffc0_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6c2867fa84c6d940156125c510710dd9cf2ef7f1886219aeae327e93049a37f86dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "5-10 文件的保护",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004247291_1ec16f710b9c44078667acb0fa80f48e_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f67b58efcdc4a3462b6b5bc9ad68d786d969de1640761163a4c050ffda28197c96dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "5-11 存取方法",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004249307_0b03d793cd1d4b768b2d0a1219d6f028_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6a872d0c98093c2e5a445cb2e8ecd7319b22391f667ec02cf1674d88a2187c93cdc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "5-12 文件的使用",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004250292_b9277dd3632d46b694d9b8d95a2003de_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f665c7e2e87e73e745350db9fb2df6a9ea759ba2db8d35c1218fd07f07fa9a9640dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "5-13 辅存空间管理",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004248282_2425bc4a3ba9437c9e0ceaae6628e11e_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f66bef534fd06af3123d1182d184af7cd6b15c6ecc2afac99cdbbd379ee7a3ec9bdc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "5-14 文件操作的执行过程",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004248283_7d396acb8a6e486f88cb326fc583ed48_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f66bef534fd06af3123d1182d184af7cd64e76bb796b292090f59c0adfb2d472d9dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      }
+    ]
+  },
+  {
+    "name" : "第十周：并发程序设计（上）",
+    "videos" : [
+      {
+        "name" : "6-1\t并发程序设计的概念",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004250299_f8a82d69e4f74e7497cae46e08dcb545_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f665c7e2e87e73e745350db9fb2df6a9eaf23be2602972b9900eb1c47385b890d2dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "6-2\t并发进程的制约关系",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004249314_fab668f72f3d4bae8df29417baf9987d_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6a872d0c98093c2e5a445cb2e8ecd7319872ef7ca262e47a4fc06c85ba4227b92dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "6-3\t临界区",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004249313_13ba540729e04c9db38dbef1830ef660_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6c2867fa84c6d940156125c510710dd9cc3a2943e25a93a64d8018afcc751e3f3dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "6-4\t临界区管理实现的尝试",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004248286_98d9de2adc2a463d9d4ec629e817f049_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f66bef534fd06af3123d1182d184af7cd663edb02e8fa90b4cc37ad6acc55cc059dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "6-5\t临界区管理实现的硬件方式",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004247289_cbf5a4bd4333459ea8aead3b44450243_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f67b58efcdc4a3462b6b5bc9ad68d786d9f05147c6666bfd9032d11196f2501cb6dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      }
+    ]
+  },
+  {
+    "name" : "第十一周：并发程序设计（中）",
+    "videos" : [
+      {
+        "name" : "6-6\tPV操作与进程互斥",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004249316_b73c840031c046438b8d8fe0d23b94ef_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6a872d0c98093c2e5a445cb2e8ecd73192fe1dbb9efb91d4c4b9e5c6e59c57262dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "6-7\tPV操作与进程同步",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004250298_df8797059b234ddbbc65dee105951130_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f665c7e2e87e73e745350db9fb2df6a9ea9b7f94ce4bb83766977848d20fdfe873dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "6-8\t生产者消费者问题探究",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/06\/28\/1004593139_747d18dd56c94cdbb042e97e58f44d95_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f665c7e2e87e73e745350db9fb2df6a9ea4cb203fbf60411cd0da79b0a39209f5fdc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "6-9\t管程概述",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004249320_ec333bc059c04c209e9274efcec605d4_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6a872d0c98093c2e5a445cb2e8ecd73198ed3a4cc1c965d598903db7cc84ad299dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "6-10 霍尔管程",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004247288_3b571d7d856148e0a584652195040563_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f66bef534fd06af3123d1182d184af7cd671730d678f1966f1123cff54bf32338edc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "6-11 霍尔管程的例",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004247290_5ff51f5597b34e3bb9c6d0ef8f64b757_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f67b58efcdc4a3462b6b5bc9ad68d786d9bbe1eb69ee987fcd177724fffb4145c1dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      }
+    ]
+  },
+  {
+    "name" : "第十二周：并发程序设计（下）",
+    "videos" : [
+      {
+        "name" : "6-12 进程通信",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004250297_6a9d268448eb42518b9eb92baa5bec24_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f665c7e2e87e73e745350db9fb2df6a9ea4f0eff4cd0c3419be2c4c89781468c83dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "6-13 高级进程通信机制",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004248284_d22b77ec4c0c4aa48e6640dc2a5cd39f_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f66bef534fd06af3123d1182d184af7cd6ae90115878ba10adca4c37480650e858dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "6-14 死锁的产生",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004249319_452c77aad3c14b779211ea3779f07734_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6c2867fa84c6d940156125c510710dd9c492d05463391466ab7c32670f245b94edc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "6-15 死锁的防止",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004249315_d7634f79abe94a66b3396846fb59953e_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f6a872d0c98093c2e5a445cb2e8ecd7319b99e5cac1f4c6be62a87266ac94c8440dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "6-16 死锁的避免",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004247287_686f8ac47d1745a6b520867c4ced632a_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f67b58efcdc4a3462b6b5bc9ad68d786d98619c5aaed4aa5c3a393c3a9c149225edc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      },
+      {
+        "name" : "6-17 死锁的检测",
+        "downloadUrl" : "http:\/\/jdvodrvfb210d.vod.126.net\/mooc-video\/nos\/mp4\/2016\/04\/06\/1004248285_4dceaecf7f6e42798f868474e12af684_hd.mp4?ak=99ed7479ee303d1b1361b0ee5a4abcee2b0b5f3033ce346b32f14ae95caba2f66bef534fd06af3123d1182d184af7cd6227e9294c0053d2af17559f96af45ee2dc73ca898c2e909ad081fb3bc930be9adae3070f62128a029f5d4c798f8df62e8d527559dfc298f46da8ad5f53c2548f0797ab0443b0ce0c1b07fa8415bc5e265f33a26f5b1c3ca6c5fb7b88ad4b8b179b7ad6f2c848f1a32a51c2df2fed3c1e9e78811ec85e3d19ea763a2749a2e3af"
+      }
+    ]
+  }
+]

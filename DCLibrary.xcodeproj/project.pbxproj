@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A22718C21F0BB8100262136 /* MOOCDownLoad in Resources */ = {isa = PBXBuildFile; fileRef = 7A22718B21F0BB8100262136 /* MOOCDownLoad */; };
+		7A22718E21F0BB8700262136 /* Mooc in Resources */ = {isa = PBXBuildFile; fileRef = 7A22718D21F0BB8700262136 /* Mooc */; };
 		7A340BD821A54D600021BE69 /* UIImage+DCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A340BD721A54D600021BE69 /* UIImage+DCAdd.m */; };
 		7ABDC3E02190487D00025328 /* DCURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABDC3DF2190487D00025328 /* DCURLSessionManager.m */; };
 		7ADC104A20E1184100D5F80F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC104920E1184100D5F80F /* AppDelegate.m */; };
@@ -39,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		692213973784EC793CDA58C9 /* Pods-DCLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DCLibrary/Pods-DCLibrary.debug.xcconfig"; sourceTree = "<group>"; };
+		7A22718B21F0BB8100262136 /* MOOCDownLoad */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MOOCDownLoad; sourceTree = "<group>"; };
+		7A22718D21F0BB8700262136 /* Mooc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mooc; sourceTree = "<group>"; };
 		7A340BD621A54D600021BE69 /* UIImage+DCAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+DCAdd.h"; sourceTree = "<group>"; };
 		7A340BD721A54D600021BE69 /* UIImage+DCAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DCAdd.m"; sourceTree = "<group>"; };
 		7ABDC3DE2190487D00025328 /* DCURLSessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCURLSessionManager.h; sourceTree = "<group>"; };
@@ -114,6 +118,8 @@
 		7ADC104720E1184100D5F80F /* DCLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				7A22718B21F0BB8100262136 /* MOOCDownLoad */,
+				7A22718D21F0BB8700262136 /* Mooc */,
 				7ADC104820E1184100D5F80F /* AppDelegate.h */,
 				7ADC104920E1184100D5F80F /* AppDelegate.m */,
 				7ADC104B20E1184100D5F80F /* ViewController.h */,
@@ -273,6 +279,8 @@
 			files = (
 				7ADC105520E1184300D5F80F /* LaunchScreen.storyboard in Resources */,
 				7ADC105220E1184300D5F80F /* Assets.xcassets in Resources */,
+				7A22718E21F0BB8700262136 /* Mooc in Resources */,
+				7A22718C21F0BB8100262136 /* MOOCDownLoad in Resources */,
 				7ADC105020E1184100D5F80F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
