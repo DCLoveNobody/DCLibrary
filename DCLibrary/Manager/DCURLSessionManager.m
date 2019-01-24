@@ -88,6 +88,9 @@ didFinishDownloadingToURL:(NSURL *)location
         NSFileManager *fileManager = [NSFileManager defaultManager];
         NSError *error = nil;
         [fileManager moveItemAtURL:location toURL:self.destinationURL error:&error];
+        if (error) {
+            
+        }
     }
 }
 

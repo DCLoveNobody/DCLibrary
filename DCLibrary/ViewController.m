@@ -11,15 +11,7 @@
 #import "NSObject+DCRuntime.h"
 #import "NSString+DCSecurity.h"
 #import <AFNetworking.h>
-@interface Person : NSObject
-
-@end
-
-@implementation Person
-+ (instancetype)person {
-    return [[Person alloc] init];
-}
-@end
+#import "DCBubbleView.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) DCURLSessionManager *sessionManager;
@@ -33,6 +25,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self moocDownLoad];
+    return;
+    DCBubbleView *bubbleView = [[DCBubbleView alloc] initWithFrame:CGRectMake(0, 0, 22, 22)];
+    bubbleView.center = self.view.center;
+    [self.view addSubview:bubbleView];
 }
 
 - (void)moocDownLoad {
@@ -51,6 +47,7 @@
     NSDictionary *video = self.downloadLessons.firstObject;
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:video[@"downloadUrl"]]];
     NSURL *documentPath = [NSURL fileURLWithPath:[NSString stringWithFormat:@"/Users/haoke/Desktop/Videos/%@.mp4", video[@"name"]]];
+    NSURLComponents *components = [NSURLComponents componentsWithURL:documentPath resolvingAgainstBaseURL:NO];
     __weak typeof(self) weakSelf = self;
     NSURLSessionDownloadTask *downloadTask = [self.sessionManager downloadTaskWithRequest:request downloadProgress:^(NSProgress *downloadProgress) {
         CGFloat progress = downloadProgress.completedUnitCount * 1.0 / downloadProgress.totalUnitCount;

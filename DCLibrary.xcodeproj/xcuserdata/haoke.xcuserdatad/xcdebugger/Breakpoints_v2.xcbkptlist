@@ -24,13 +24,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DCLibrary/DCURLSessionManager.m"
-            timestampString = "565264335.189877"
+            timestampString = "569426225.073025"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
             endingLineNumber = "38"
-            landmarkName = "-URLSession:task:didCompleteWithError:"
-            landmarkType = "7">
+            landmarkName = "DCURLSessionManagerTaskDelegate"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -40,12 +40,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DCLibrary/DCURLSessionManager.m"
-            timestampString = "565264335.190259"
+            timestampString = "569426225.073081"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "204"
-            endingLineNumber = "204"
-            landmarkName = "-URLSession:task:didCompleteWithError:"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
+            landmarkName = "-downloadTaskWithRequest:downloadProgress:destination:completionHandler:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

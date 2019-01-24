@@ -10,6 +10,7 @@
 		7A22718C21F0BB8100262136 /* MOOCDownLoad in Resources */ = {isa = PBXBuildFile; fileRef = 7A22718B21F0BB8100262136 /* MOOCDownLoad */; };
 		7A22718E21F0BB8700262136 /* Mooc in Resources */ = {isa = PBXBuildFile; fileRef = 7A22718D21F0BB8700262136 /* Mooc */; };
 		7A340BD821A54D600021BE69 /* UIImage+DCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A340BD721A54D600021BE69 /* UIImage+DCAdd.m */; };
+		7A92962D21F1A0900073CC38 /* DCBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A92962C21F1A0900073CC38 /* DCBubbleView.m */; };
 		7ABDC3E02190487D00025328 /* DCURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABDC3DF2190487D00025328 /* DCURLSessionManager.m */; };
 		7ADC104A20E1184100D5F80F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC104920E1184100D5F80F /* AppDelegate.m */; };
 		7ADC104D20E1184100D5F80F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC104C20E1184100D5F80F /* ViewController.m */; };
@@ -45,6 +46,8 @@
 		7A22718D21F0BB8700262136 /* Mooc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mooc; sourceTree = "<group>"; };
 		7A340BD621A54D600021BE69 /* UIImage+DCAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+DCAdd.h"; sourceTree = "<group>"; };
 		7A340BD721A54D600021BE69 /* UIImage+DCAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DCAdd.m"; sourceTree = "<group>"; };
+		7A92962B21F1A0900073CC38 /* DCBubbleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCBubbleView.h; sourceTree = "<group>"; };
+		7A92962C21F1A0900073CC38 /* DCBubbleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCBubbleView.m; sourceTree = "<group>"; };
 		7ABDC3DE2190487D00025328 /* DCURLSessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCURLSessionManager.h; sourceTree = "<group>"; };
 		7ABDC3DF2190487D00025328 /* DCURLSessionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCURLSessionManager.m; sourceTree = "<group>"; };
 		7ADC104520E1184100D5F80F /* DCLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +66,7 @@
 		7ADC106820E1184300D5F80F /* DCLibraryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCLibraryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ADC106C20E1184300D5F80F /* DCLibraryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCLibraryUITests.m; sourceTree = "<group>"; };
 		7ADC106E20E1184300D5F80F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AEB822821F9B0730094FA69 /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
 		8ADBF3C3E95D681B522DDF4C /* libPods-DCLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DCLibrary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36297FB965A5B93BB58BEF8 /* Pods-DCLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCLibrary.release.xcconfig"; path = "Pods/Target Support Files/Pods-DCLibrary/Pods-DCLibrary.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +97,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A92962821F1A0210073CC38 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				7ABDC3DE2190487D00025328 /* DCURLSessionManager.h */,
+				7ABDC3DF2190487D00025328 /* DCURLSessionManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		7A92962921F1A02C0073CC38 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				7A340BD621A54D600021BE69 /* UIImage+DCAdd.h */,
+				7A340BD721A54D600021BE69 /* UIImage+DCAdd.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		7A92962A21F1A0360073CC38 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7ADC104820E1184100D5F80F /* AppDelegate.h */,
+				7ADC104920E1184100D5F80F /* AppDelegate.m */,
+				7ADC104E20E1184100D5F80F /* Main.storyboard */,
+				7ADC105120E1184300D5F80F /* Assets.xcassets */,
+				7ADC105320E1184300D5F80F /* LaunchScreen.storyboard */,
+				7ADC105720E1184300D5F80F /* main.m */,
+				7A22718B21F0BB8100262136 /* MOOCDownLoad */,
+				7A22718D21F0BB8700262136 /* Mooc */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		7ADC103C20E1184100D5F80F = {
 			isa = PBXGroup;
 			children = (
@@ -118,21 +155,15 @@
 		7ADC104720E1184100D5F80F /* DCLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				7A22718B21F0BB8100262136 /* MOOCDownLoad */,
-				7A22718D21F0BB8700262136 /* Mooc */,
-				7ADC104820E1184100D5F80F /* AppDelegate.h */,
-				7ADC104920E1184100D5F80F /* AppDelegate.m */,
+				7ADC105620E1184300D5F80F /* Info.plist */,
+				7AEB822821F9B0730094FA69 /* Location.gpx */,
+				7A92962A21F1A0360073CC38 /* Resources */,
+				7A92962921F1A02C0073CC38 /* Category */,
+				7A92962821F1A0210073CC38 /* Manager */,
 				7ADC104B20E1184100D5F80F /* ViewController.h */,
 				7ADC104C20E1184100D5F80F /* ViewController.m */,
-				7ADC104E20E1184100D5F80F /* Main.storyboard */,
-				7ADC105120E1184300D5F80F /* Assets.xcassets */,
-				7ADC105320E1184300D5F80F /* LaunchScreen.storyboard */,
-				7ADC105620E1184300D5F80F /* Info.plist */,
-				7ADC105720E1184300D5F80F /* main.m */,
-				7ABDC3DE2190487D00025328 /* DCURLSessionManager.h */,
-				7ABDC3DF2190487D00025328 /* DCURLSessionManager.m */,
-				7A340BD621A54D600021BE69 /* UIImage+DCAdd.h */,
-				7A340BD721A54D600021BE69 /* UIImage+DCAdd.m */,
+				7A92962B21F1A0900073CC38 /* DCBubbleView.h */,
+				7A92962C21F1A0900073CC38 /* DCBubbleView.m */,
 			);
 			path = DCLibrary;
 			sourceTree = "<group>";
@@ -237,7 +268,7 @@
 			attributes = {
 				CLASSPREFIX = DC;
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = "浩克";
+				ORGANIZATIONNAME = dc_ironman;
 				TargetAttributes = {
 					7ADC104420E1184100D5F80F = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -332,6 +363,7 @@
 				7ADC105820E1184300D5F80F /* main.m in Sources */,
 				7A340BD821A54D600021BE69 /* UIImage+DCAdd.m in Sources */,
 				7ADC104A20E1184100D5F80F /* AppDelegate.m in Sources */,
+				7A92962D21F1A0900073CC38 /* DCBubbleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,7 +542,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.soyoung.DCLibrary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cdc.DCLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -530,7 +562,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.soyoung.DCLibrary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cdc.DCLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

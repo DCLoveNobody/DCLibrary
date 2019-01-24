@@ -58,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DCLibrary/DCURLSessionManager.m"
-            timestampString = "565264335.190793"
+            timestampString = "569426225.072413"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "236"
-            endingLineNumber = "236"
-            landmarkName = "-URLSession:dataTask:didReceiveData:"
+            startingLineNumber = "239"
+            endingLineNumber = "239"
+            landmarkName = "-URLSession:task:willPerformHTTPRedirection:newRequest:completionHandler:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -74,28 +74,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DCLibrary/DCURLSessionManager.m"
-            timestampString = "565264335.190961"
+            timestampString = "569426225.072485"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "245"
-            endingLineNumber = "245"
-            landmarkName = "-URLSession:dataTask:willCacheResponse:completionHandler:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "DCLibrary/ViewController.m"
-            timestampString = "565264335.191039"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "248"
+            endingLineNumber = "248"
+            landmarkName = "-URLSession:task:didReceiveChallenge:completionHandler:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
