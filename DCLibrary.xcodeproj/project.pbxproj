@@ -10,6 +10,7 @@
 		7A22718C21F0BB8100262136 /* MOOCDownLoad in Resources */ = {isa = PBXBuildFile; fileRef = 7A22718B21F0BB8100262136 /* MOOCDownLoad */; };
 		7A22718E21F0BB8700262136 /* Mooc in Resources */ = {isa = PBXBuildFile; fileRef = 7A22718D21F0BB8700262136 /* Mooc */; };
 		7A340BD821A54D600021BE69 /* UIImage+DCAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A340BD721A54D600021BE69 /* UIImage+DCAdd.m */; };
+		7A5D1C532270A7660024ED3C /* DCDownLoadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5D1C522270A7660024ED3C /* DCDownLoadOperation.m */; };
 		7A92962D21F1A0900073CC38 /* DCBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A92962C21F1A0900073CC38 /* DCBubbleView.m */; };
 		7ABDC3E02190487D00025328 /* DCURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABDC3DF2190487D00025328 /* DCURLSessionManager.m */; };
 		7ADC104A20E1184100D5F80F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC104920E1184100D5F80F /* AppDelegate.m */; };
@@ -46,6 +47,8 @@
 		7A22718D21F0BB8700262136 /* Mooc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mooc; sourceTree = "<group>"; };
 		7A340BD621A54D600021BE69 /* UIImage+DCAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+DCAdd.h"; sourceTree = "<group>"; };
 		7A340BD721A54D600021BE69 /* UIImage+DCAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DCAdd.m"; sourceTree = "<group>"; };
+		7A5D1C512270A7660024ED3C /* DCDownLoadOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCDownLoadOperation.h; sourceTree = "<group>"; };
+		7A5D1C522270A7660024ED3C /* DCDownLoadOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCDownLoadOperation.m; sourceTree = "<group>"; };
 		7A92962B21F1A0900073CC38 /* DCBubbleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCBubbleView.h; sourceTree = "<group>"; };
 		7A92962C21F1A0900073CC38 /* DCBubbleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCBubbleView.m; sourceTree = "<group>"; };
 		7ABDC3DE2190487D00025328 /* DCURLSessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCURLSessionManager.h; sourceTree = "<group>"; };
@@ -102,13 +105,17 @@
 			children = (
 				7ABDC3DE2190487D00025328 /* DCURLSessionManager.h */,
 				7ABDC3DF2190487D00025328 /* DCURLSessionManager.m */,
+				7A5D1C512270A7660024ED3C /* DCDownLoadOperation.h */,
+				7A5D1C522270A7660024ED3C /* DCDownLoadOperation.m */,
 			);
-			path = Manager;
+			name = Manager;
+			path = ../Manager;
 			sourceTree = "<group>";
 		};
 		7A92962921F1A02C0073CC38 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				7A92962821F1A0210073CC38 /* Manager */,
 				7A340BD621A54D600021BE69 /* UIImage+DCAdd.h */,
 				7A340BD721A54D600021BE69 /* UIImage+DCAdd.m */,
 			);
@@ -159,7 +166,6 @@
 				7AEB822821F9B0730094FA69 /* Location.gpx */,
 				7A92962A21F1A0360073CC38 /* Resources */,
 				7A92962921F1A02C0073CC38 /* Category */,
-				7A92962821F1A0210073CC38 /* Manager */,
 				7ADC104B20E1184100D5F80F /* ViewController.h */,
 				7ADC104C20E1184100D5F80F /* ViewController.m */,
 				7A92962B21F1A0900073CC38 /* DCBubbleView.h */,
@@ -358,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A5D1C532270A7660024ED3C /* DCDownLoadOperation.m in Sources */,
 				7ADC104D20E1184100D5F80F /* ViewController.m in Sources */,
 				7ABDC3E02190487D00025328 /* DCURLSessionManager.m in Sources */,
 				7ADC105820E1184300D5F80F /* main.m in Sources */,

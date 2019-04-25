@@ -12,23 +12,39 @@
 #import "NSString+DCSecurity.h"
 #import <AFNetworking.h>
 #import "DCBubbleView.h"
-
+#import "DCPerson.h"
+#import "DCSon.h"
+#import "DCDownLoadOperation.h"
 @interface ViewController ()
 @property (nonatomic, strong) DCURLSessionManager *sessionManager;
 @property (nonatomic, strong) dispatch_queue_t syncQueue;
 @property (nonatomic, strong) dispatch_queue_t asyncQueue;
 @property (nonatomic, strong) NSMutableArray *downloadLessons;
+@property (nonatomic, strong) NSOperationQueue *downloadQueue;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self moocDownLoad];
-    return;
-    DCBubbleView *bubbleView = [[DCBubbleView alloc] initWithFrame:CGRectMake(0, 0, 22, 22)];
-    bubbleView.center = self.view.center;
-    [self.view addSubview:bubbleView];
+    [self moocTestDownLoad];
+}
+
+- (void)moocTestDownLoad {
+    self.downloadLessons = [NSMutableArray array];
+    NSString *resourceURL = @"/Users/haoke/Desktop/Mooc";
+    NSData *resourceData = [NSData dataWithContentsOfFile:resourceURL];
+    if (resourceData) {
+        NSDictionary *moocDictionary = [NSJSONSerialization JSONObjectWithData:resourceData options:NSJSONReadingMutableContainers error:nil];
+        [self.downloadLessons addObjectsFromArray:moocDictionary[@"videos"]];
+    }
+    for (NSDictionary *video in self.downloadLessons) {
+        DCDownLoadOperation *operation = [[DCDownLoadOperation alloc] init];
+        operation.session = self.sessionManager;
+        operation.downloadURL = video[@"downloadUrl"];
+        operation.downloadPath = [NSString stringWithFormat:@"/Users/haoke/Desktop/DownLoad/%@.mp4", video[@"name"]];
+        [self.downloadQueue addOperation:operation];
+    }
 }
 
 - (void)moocDownLoad {
@@ -92,4 +108,11 @@
     return _sessionManager;
 }
 
+- (NSOperationQueue *)downloadQueue {
+    if (!_downloadQueue) {
+        _downloadQueue = [[NSOperationQueue alloc] init];
+        _downloadQueue.maxConcurrentOperationCount = 3;
+    }
+    return _downloadQueue;
+}
 @end

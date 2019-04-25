@@ -20,6 +20,5 @@
                                      downloadProgress:(void (^)(NSProgress *downloadProgress)) downloadProgressBlock
                                           destination:(NSURL * (^)(NSURLSession *, NSURLSessionDownloadTask *, NSURL *))destination
                                     completionHandler:(nullable void (^)(NSURLResponse *response, id _Nullable responseObject,  NSError * _Nullable error))completionHandler;
-+ (instancetype)shareInstance;
 @end
 
