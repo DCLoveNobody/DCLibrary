@@ -22,6 +22,10 @@
         double progress = downloadProgress.completedUnitCount * 1.0 / downloadProgress.totalUnitCount;
         NSLog(@"progress = %lf", progress);
     } destination:^(NSURLSession *session, NSURLSessionDownloadTask *task, NSURL *URL) {
+        NSString *directory = [self.downloadPath stringByDeletingLastPathComponent];
+        if (![[NSFileManager defaultManager] fileExistsAtPath:directory]) {
+            [[NSFileManager defaultManager] createDirectoryAtPath:directory withIntermediateDirectories:YES attributes:nil error:nil];
+        }
         return [NSURL fileURLWithPath:self.downloadPath];
     } completionHandler:^(NSURLResponse *response, id  _Nullable responseObject, NSError * _Nullable error) {
         weakSelf.finished = YES;
